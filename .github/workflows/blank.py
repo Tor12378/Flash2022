@@ -7,7 +7,7 @@ for x in range(1513,15000):
         max_all=max(max_all,x)
 print(max_all,kol)
 
-#простое 2 остат от 3 равен 1 и тд
+#простое 2 
 kol=0
 min_all=100000000
 for x in range(1000,15000):
@@ -29,7 +29,7 @@ def spisok_2(x1):
     if (kol1==1 and kol2==0) or (kol2==1 and kol1==0):
         return True
     else:
-        return True
+        return False
 
 summ_numbers=0
 
@@ -38,7 +38,7 @@ for x in range(6900,30000):
     if spisok_2(x):
         kol+=1
         summ_numbers+=x
-print(summ_numbers/kol,kol)
+print(summ_numbers//kol,kol)
 
 
 #среднее 2
@@ -51,7 +51,7 @@ def spisok_2(x1):
     if kol==2:
         return True
     else:
-        return True
+        return False
 
 
 kol=0
@@ -63,7 +63,7 @@ for x in range(1000,2000):
 
 print(kol,min_all)
 
-#слолжное 1 нечетные позции найти кол и мин число (индексы цыфр в числе начинаються с 0 )
+#слолжное 1 
 def sum_del(x):
     x1 = str(x)
     sum_del = int(x1[::2])
@@ -80,7 +80,8 @@ for i in range(999,9999):
         kol+=1
         max_number=max(max_number,i)
 print(kol,max_number)
-#сложное 2 сумма четных и нечетных кто больше
+
+#сложное 2 
 
 def sum_del(x):
     del1=0
@@ -101,6 +102,7 @@ for i in range(2500,15000):
         min_number=min(min_number,i)
 
 print(kol,min_number)
+# дополнительное
 def number_pry(i):
     p=0
     for x in range(2,i-1):
