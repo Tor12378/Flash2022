@@ -115,8 +115,8 @@ def number_pry(i):
         return True
     else:
         return False
-i=0
+
 for x in range(700,50000):
     if number_pry(x):
-        i=+1
+        
         print(x)
