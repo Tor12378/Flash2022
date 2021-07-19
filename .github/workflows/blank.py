@@ -1,7 +1,7 @@
 #простое 1 
 kol=0
 max_all=0
-for x in range(1513,15000):
+for x in range(15121,31001):
     if x%12==0 and x %14==0 and x%17!=0 and x%5!=0:
         kol+=1
         max_all=max(max_all,x)
@@ -10,7 +10,7 @@ print(max_all,kol)
 #простое 2 
 kol=0
 min_all=100000000
-for x in range(1000,15000):
+for x in range(9999,28001):
     if x %4==2 and x %5==1 and x%10!=8 :
         kol+=1
         min_all=min(min_all,x)
@@ -34,7 +34,7 @@ def spisok_2(x1):
 summ_numbers=0
 
 kol=0
-for x in range(6900,30000):
+for x in range(6900,30001):
     if spisok_2(x):
         kol+=1
         summ_numbers+=x
@@ -56,7 +56,7 @@ def spisok_2(x1):
 
 kol=0
 min_all=100000
-for x in range(1000,2000):
+for x in range(10000,36001):
     if x % 3==0 and x%7!=0 and x %2!=0 and spisok_2(x):
         kol+=1
         min_all=min(min_all,x)
@@ -74,7 +74,7 @@ def sum_del(x):
     return del_numbers
 kol=0
 max_number=0
-for i in range(999,9999):
+for i in range(11000,45001):
     p = sum_del(i)
     if i % p==0:
         kol+=1
@@ -95,7 +95,7 @@ def sum_del(x):
     return max(del1,del2)
 kol=0
 min_number=10000000
-for i in range(2500,15000):
+for i in range(24560,46790):
     p = sum_del(i)
     if i % p==0 and i%3==0 and i%17!=0:
         kol+=1
@@ -103,20 +103,10 @@ for i in range(2500,15000):
 
 print(kol,min_number)
 # дополнительное
-def number_pry(i):
-    p=0
-    for x in range(2,i-1):
-        if i%x==0:
-            if x in [2, 3, 5, 7, 11, 13, 17]:
-                pass
-            else:
-                p=1
-    if p==0:
-        return True
-    else:
-        return False
-
-for x in range(700,50000):
-    if number_pry(x):
-        
-        print(x)
+kol=0
+max_num=0
+for x in range(11369,76369):
+    if x %3==0 and x %13==0 and x %4!=0 and x%17!=0 and x %6==3:
+        kol+=1
+        max_num=max(max_num,x)
+print(max_num,kol)
