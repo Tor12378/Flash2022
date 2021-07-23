@@ -104,9 +104,7 @@ for i in range(24560,46790):
 print(kol,min_number)
 # дополнительное
 kol=0
-max_num=0
-for x in range(11369,76369):
-    if x %3==0 and x %13==0 and x %4!=0 and x%17!=0 and x %6==3:
+for x in range(729,16807):
+    if x %7!=0 and x %11!=0 and x %13!=0 and x %17==0 and x %19==0 and x %23==0 and x%2==0:
         kol+=1
-        max_num=max(max_num,x)
-print(max_num,kol)
+        print(x)
