@@ -106,5 +106,5 @@ print(kol,min_number)
 kol=0
 for x in range(729,16807):
     if x %7!=0 and x %11!=0 and x %13!=0 and x %17==0 and x %19==0 and x %23==0 and x%2==0:
-        kol+=1
+        
         print(x)
